@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevin.calc.MainActivity"
+    android:backgroundTint="@android:color/holo_blue_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="1"
+            android:id="@+id/button1"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="C"
+            android:id="@+id/buttonc"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button1"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="false"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickClear" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/white"
+            android:gravity="bottom|right"
+            android:textSize="65sp" />
+
+        <Button
+            android:text="7"
+            android:id="@+id/button7"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="8"
+            android:id="@+id/button8"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/button7"
+            android:layout_toEndOf="@+id/button7"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="9"
+            android:id="@+id/button9"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/button8"
+            android:layout_toRightOf="@+id/button8"
+            android:layout_toEndOf="@+id/button8"
+            android:layout_below="@+id/textView2"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="/"
+            android:id="@+id/buttondiv"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/button9"
+            android:layout_toRightOf="@+id/button9"
+            android:layout_toEndOf="@+id/button9"
+            android:layout_below="@+id/textView2"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickOperator" />
+
+        <Button
+            android:text="4"
+            android:id="@+id/button4"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="5"
+            android:id="@+id/button5"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button8"
+            android:layout_toRightOf="@+id/button7"
+            android:layout_toEndOf="@+id/button7"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="6"
+            android:id="@+id/button6"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button9"
+            android:layout_toRightOf="@+id/button5"
+            android:layout_toEndOf="@+id/button5"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="3"
+            android:id="@+id/button3"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button6"
+            android:layout_toRightOf="@+id/button5"
+            android:layout_toEndOf="@+id/button5"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="="
+            android:id="@+id/buttoneq"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button3"
+            android:layout_toRightOf="@+id/button5"
+            android:layout_toEndOf="@+id/button5"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickEqual" />
+
+        <Button
+            android:text="*"
+            android:id="@+id/buttonmul"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/button6"
+            android:layout_toRightOf="@+id/button6"
+            android:layout_toEndOf="@+id/button6"
+            android:layout_below="@+id/buttondiv"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickOperator" />
+
+        <Button
+            android:text="-"
+            android:id="@+id/buttonmin"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_below="@+id/buttonmul"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickOperator" />
+
+        <Button
+            android:text="+"
+            android:id="@+id/buttonplus"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/buttoneq"
+            android:layout_toRightOf="@+id/buttoneq"
+            android:layout_toEndOf="@+id/buttoneq"
+            android:layout_below="@+id/buttonmin"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickOperator" />
+
+        <Button
+            android:text="2"
+            android:id="@+id/button2"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button5"
+            android:layout_toRightOf="@+id/button4"
+            android:layout_toEndOf="@+id/button4"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+
+        <Button
+            android:text="0"
+            android:id="@+id/button0"
+            android:textSize="30sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button2"
+            android:layout_toRightOf="@+id/button4"
+            android:layout_toEndOf="@+id/button4"
+            android:layout_height="101dp"
+            android:layout_width="95dp"
+            android:onClick="onClickNum" />
+    </RelativeLayout>
+</RelativeLayout>
